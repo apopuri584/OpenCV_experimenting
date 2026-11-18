@@ -1,0 +1,8 @@
+- the kernel is a small 2d grid of number used to apply effects. 
+- cv.MORPH_DILATE: you take the maximum value inside the kernel 
+- cv.MORPH_ERODE: you take the minimum value inside the kernel
+- cv.MORPH_OPEN: first erosion and dilation
+- cv.MORPH_CLOSE: first dilation then erosion
+- cv.MORPH_GRADIENT: dilation - erosion
+- cv.TOPHAT: original image - (open: erosion and dilation)
+- cv.BLACKHAT: original image - (close: dilation and erosion )

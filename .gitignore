@@ -1,0 +1,16 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments (in case you add one later)
+venv/
+.venv/
+
+# OS & Editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large media / personal PDFs (uncomment lines below if you don't want them on GitHub)
+# videos/
+# images/*.pdf

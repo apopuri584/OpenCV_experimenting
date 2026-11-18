@@ -1,0 +1,6 @@
+- every object has a correct bounding box and a prediciton bounding box
+- take intersection of prediction and correct bounding box, and union of both bounding boxes 
+- metric: intersection/union -> IoU >0.5(good bounding box), IoU > 0.7(pretty good), IoU = 1(Perfect bounding)
+- origin in computer vision images is in the top left cornet (horizontally to left x value increase, down increases y value)
+- given two lists of corner points of bounding boxes: b1 = [x1, y1, x2, y2] b2 = [x1, y1, x2, y2], calculate max x,y values of first points and min x,y values of second point in both bounding boxes
+

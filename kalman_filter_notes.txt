@@ -1,0 +1,26 @@
+1) Design the KF
+goal: estimate x, y
+measurements: z = x + noise, noise = Normally distributed(0, Variance)
+
+state vector xk = [xk, vk]; Zk = [Zk ]
+
+2) time evolution
+x(k+1) = xK + vK * delta_t + (1/2)(a)(delta_t)
+v(k+1) = vk + a * delta_t --> speed can change based on noise
+
+
+3) Write time evolution equations in vector form: 
+xk_vector = [1, delta t            [1/2 * delta_t
+                                    delta_t] * a
+            0,   1     ] * Xk + 
+
+a ~ Normally distributed(0, variance)
+
+
+4) zk = Xk + noise
+
+zk_vector = [1, 0] * xk_vector + noise
+[1, 0] = H
+
+
+Prediction Step -> propogate state xk to xk+1
